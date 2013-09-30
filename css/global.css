@@ -1355,7 +1355,7 @@ nav {
     font-size: .9em; }
 
 nav a.active {
-  color: red; }
+  color: #95a5a6; }
 
 nav a:hover,
 nav a:focus {
@@ -2320,37 +2320,37 @@ a:visited {
   cursor: pointer; }
 
 /******************************
- SLIDE 1 
+ SLIDE 1
 *******************************/
 #slide1 {
   background-color: #f1f1f1; }
 
 /******************************
- SLIDE 3 
+ SLIDE 3
 *******************************/
 #slide3 {
   background-color: #f1f1f1; }
 
 /******************************
- SLIDE 4 
+ SLIDE 4
 *******************************/
 #slide4 {
   background-color: #f1f1f1; }
 
 /******************************
- SLIDE 5 
+ SLIDE 5
 *******************************/
 #slide5 {
   background-color: #f1f1f1; }
 
 /******************************
- SLIDE 6 
+ SLIDE 6
 *******************************/
 #slide6 {
   background-color: #f1f1f1; }
 
 /******************************
- SLIDE 7 
+ SLIDE 7
 *******************************/
 #slide7 {
   background-color: #f1f1f1; }

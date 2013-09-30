@@ -9,7 +9,6 @@ jQuery(document).ready(function ($) {
 	slide = $('.slide'),
 	button = $('.button'),
 	mywindow = $(window),
-  Grid,
   dataslide,
 	htmlbody = $('html,body');
 
