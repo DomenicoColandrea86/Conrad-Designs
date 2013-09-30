@@ -1,0 +1,84 @@
+.footer-wrap {
+	border-top: 1px solid darken($footer, 2%);
+	height: $topBar;
+	width: 100%;
+	background: #ddd;
+	@include breakpoint(baby-bear){
+		height: auto;
+	}
+	p {
+		@include font-stack-gloriola();
+		font-size: .8em;
+		color: $flatBlack;
+		span {
+			padding: 0 5px;
+			color: #fca291;
+		}
+	}
+	footer {
+		text-align: center;
+		position: relative;
+		top: 10px;
+		a {
+			display: inline-block;
+			@include font-stack-gloriola();
+			font-size: .8em;
+			text-decoration: none;
+			padding: 0 10px;
+			margin: 15px;
+			text-transform: uppercase;
+			@include breakpoint(baby-bear){
+				font-size: 1.2em;
+				display: block;
+				padding-bottom: 2px;
+				&:first-child {
+					padding-top: 10px;
+				}
+				&:last-child {
+					padding-bottom: 10px;
+				}
+			}
+		}
+	}
+}
+
+section.sec-footer {
+	padding-top: 10px;
+	text-align: center;
+	@include breakpoint(baby-bear){
+		padding-bottom: 10px;
+	}
+	a {
+		color: $flatBlack;
+		text-decoration: none;
+		&:hover, &:focus {
+			color: lighten($flatBlack, 20%);
+		}
+	}
+}
+
+// ------------------ Hover Effect
+// for main footer nav
+
+.cl-effect-15 a {
+	color: lighten($flatBlack, 45%);
+	font-weight: 700;
+	text-shadow: none;
+}
+
+.cl-effect-15 a::before {
+	color: lighten($flatBlack, 25%);
+	content: attr(data-hover);
+	position: absolute;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+	-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+	transition: transform 0.3s, opacity 0.3s;
+}
+
+.cl-effect-15 a:hover::before,
+.cl-effect-15 a:focus::before {
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	transform: scale(0.9);
+	opacity: 0;
+}

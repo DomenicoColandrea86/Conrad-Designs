@@ -1,0 +1,124 @@
+#slider-with-blocks-1 {
+  width: 100%;
+  height: 700px;
+}
+
+.rsContent {
+  color: #FFF;
+  font-size: 30px;
+  line-height: 34px;
+  float: left;
+}
+.bContainer {
+  position: relative;
+  @include font-stack-omneslight();
+}
+.rsABlock {
+  position: relative;
+  display: block;
+  left: auto;
+  top: auto;
+}
+.blockHeadline {
+  font-size: 2.6em;
+  line-height: 0;
+}
+.blockSubHeadline {
+  font-size: .9em;
+  position: relative;
+  top: 50px;
+  //line-height: 40px
+}
+.txtCent {
+  text-align: center; 
+  width: 100%; 
+}
+
+// ----------- SLIDE 1
+
+.slide1 {
+  background: $color1;
+}
+.slide1 .bContainer {
+  top: 50%;
+}
+
+// ----------- SLIDE 2
+
+.slide2 {
+    background: $color2;
+}
+.slide2 .bContainer {
+  top: 50%;
+}
+
+// ----------- SLIDE 3
+
+.slide3 {
+    background: $color3;
+}
+.slide3 .bContainer {
+   top: 50%;
+}
+
+// ----------- SLIDE 4
+
+.slide4 {
+    background: $color4;
+}
+.slide4 .bContainer {
+   top: 50%;
+}
+
+// ----------- SLIDE 5
+
+.slide5 {
+    background: $color5;
+}
+.slide5 .bContainer {
+   top: 50%;
+}
+
+// ----------- SLIDE 6
+
+.slide6 {
+    background: $salmon;
+}
+.slide6 .bContainer {
+   top: 50%;
+}
+
+//-------------media querries
+
+@media screen and (min-width: 0px) and (max-width: 960px) { 
+  .rsContent {
+    font-size: 22px;
+    line-height: 28px;
+  }
+  .blockHeadline {
+    font-size: 2.8em;
+    line-height: 32px;
+  }
+  .blockSubHeadline {
+    font-size: 26px;
+    line-height: 32px
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 500px) { 
+  .royalSlider,
+  .rsOverflow {
+    height: 500px !important;
+  }
+  .rsContent {
+    font-size: 18px;
+    //line-height: 26px;
+  }
+  .blockHeadline {
+    font-size: 2.2em;
+    line-height: 32px;
+  }
+  .blockSubHeadline {
+    font-size: 22px;
+    //line-height: 32px
+  }
+}

@@ -1,0 +1,110 @@
+
+//------------- Variables
+
+$topBar: 110px;
+$padding: 20px;
+
+
+//-------- Site Colors
+$offWhite: #f7f7f7;
+$offWhite: #f1f1f1;
+$skyBlue: #30bed5;
+$lightGray: #bdc3c7;
+$midGray: #95a5a6;
+$darkGray: #7f8c8d;
+$flatBlack: #484848;
+$salmon: #f06b50;
+$footer: #ddd;
+
+
+//-------- Slider Colors
+
+
+$color1: #3dbfd9;
+$color2: #88c800;
+$color3: #febc06;
+$color4: #cc6601;
+$color5: #866cba;
+
+//-------- button colors
+
+$red:   #E0645C;
+$dark:  #444444;
+$light: #999999;
+$blue:  #2DB6CF;
+$green: #46b98a;
+$white: #FFFFFF;
+
+$arial: Arial,sans-serif;
+
+//------------- Mixins
+
+@mixin font-stack-gloriola {
+	font-family: 'gloriola_stdlight';
+}
+
+@mixin font-stack-gloriolalight {
+  font-family: 'gloriola_stddisplay_thin';
+  font-weight: 500;
+}
+
+@mixin font-stack-omnes {
+	font-family: 'omnes_regularregular';
+}
+
+@mixin font-stack-omneslight {
+	font-family: 'omneslight';
+  font-weight: 200;
+}
+
+@mixin breakpoint($point) {
+  @if $point == mama-bear {
+    @media (max-width: 1250px) { @content; }
+  }
+  @if $point == baby-bear {
+    @media (max-width: 768px) { @content; }
+  }
+  @if $point == miny-bear {
+    @media (max-width: 550px) { @content; }
+  }
+  @if $point == reverso-baby-bear {
+    @media (min-width: 768px) { @content; }
+  }
+  @if $point == papa-bear {
+    @media (max-width: 1350px) { @content; }
+  }
+}
+
+
+//------------- Helper Classes
+
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.screen-reader {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+
+//------------- @Extends
+
+%clearfix {		// @extend %clearfix;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+%screen-reader {		// @extend %screen-reader;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
